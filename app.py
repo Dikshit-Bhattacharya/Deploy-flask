@@ -7,7 +7,7 @@ import io
 app = Flask(__name__)
 CORS(app)
 
-qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
+qa_pipeline = pipeline("question-answering", model="twmkn9/bert-base-uncased-squad2")
 
 pdf_text_context = ""
 
@@ -82,3 +82,4 @@ def ask():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True)
+
